@@ -19,7 +19,7 @@ This script allows you to toggle that mode directly from your terminal.
     ```
 ## Usage
 Type the command in the terminal:
-    ```bash
+    ```
     batcon
     ```
 
