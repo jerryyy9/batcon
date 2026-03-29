@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Path to the Lenovo IdeaPad conservation mode control
+CM_PATH="/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode"
+
+if [ ! -f "$CM_PATH" ]; then
+    echo "Error: Lenovo conservation mode interface not found."
+    exit 1
+fi
+
+STATE=$(cat "$CM_PATH")
+
+if [ "$STATE" -eq 1 ]; then
+    echo "Conservation mode is ON. Charging to 100%..."
+    echo 0 | sudo tee "$CM_PATH" > /dev/null
+else
+    echo "Conservation mode is OFF. Limiting charge to 60%..."
+    echo 1 | sudo tee "$CM_PATH" > /dev/null
+fi
