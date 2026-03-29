@@ -23,5 +23,5 @@ Type the command in the terminal:
     batcon
     ```
 
-## Why is my battery not charging"?
+## Why is my battery not charging?
 Don't panic! When Conservation Mode is active, the laptop runs directly off AC power once it reaches 60%. This prevents the "micro-cycles" of charging that degrade battery health.
