@@ -6,7 +6,13 @@ Most Lenovo laptops have a hardware-level "Conservation Mode" that limits the ba
 
 This script allows you to toggle that mode directly from your terminal.
 
-## Installation
+## Quick Install
+Paste this curl command in your terminal:
+    ```bash
+    curl -sSL https://raw.githubusercontent.com/jerryyy9/batcon/main/install.sh | bash
+    ```
+    
+## Manual Installation
 1. Clone the repo:
    ```bash
    git clone https://github.com/jerryyy9/batcon.git
