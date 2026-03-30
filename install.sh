@@ -38,7 +38,7 @@ if [[ "$INSTALL_PLASMA" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 [Desktop Entry]
 Name=Toggle Battery Conservation
 Comment=Switch between 60% and 100% charge limit
-Exec=batcon
+Exec=sudo batcon
 Icon=battery-charging-symbolic
 Terminal=false
 Type=Application
