@@ -11,9 +11,9 @@ fi
 STATE=$(cat "$CM_PATH")
 
 if [ "$STATE" -eq 1 ]; then
-    echo "Conservation mode is ON. Charging to 100%..."
+    echo "Conservation mode is OFF. Charging to 100%..."
     echo 0 | sudo tee "$CM_PATH" > /dev/null
 else
-    echo "Conservation mode is OFF. Limiting charge to 60%..."
+    echo "Conservation mode is ON. Limiting charge to 60%..."
     echo 1 | sudo tee "$CM_PATH" > /dev/null
 fi
