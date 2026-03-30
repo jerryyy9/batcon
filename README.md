@@ -28,6 +28,11 @@ Type the command in the terminal:
 ```
 batcon
 ```
+## Uninstallation
+Make sure to disable Conservation Mode before uninstallation, if you want to charge your battery to 100%. Then just run:
+```bash
+sudo rm  /usr/local/bin/batcon
+```
 
 ## Why is my battery not charging?
 When Conservation Mode is active, the laptop runs directly off AC power once it reaches 60%. This prevents the "micro-cycles" of charging that degrade battery health.
