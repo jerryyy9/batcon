@@ -31,7 +31,7 @@ batcon
 ## Uninstallation
 Make sure to disable Conservation Mode before uninstallation, if you want to charge your battery to 100%. Then just run:
 ```bash
-sudo rm  /usr/local/bin/batcon
+sudo rm /usr/local/bin/batcon
 ```
 
 ## Why is my battery not charging?
